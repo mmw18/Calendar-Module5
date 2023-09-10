@@ -51,22 +51,22 @@ $(document).ready(function () {
     // If user's current time is greater than the time-row (past),
     if (currentHour > hourBlock) {
       // turn the background color of the text area to a light-pink
-      $(this).css('background-color', '#edcbd4')
+      $(this).css('background-color', '#fec5e5')
     }
     // OR if the user's current time is within the time-row (present),
     else if (currentHour === hourBlock) {
       // turn the background color of the text area to light gray
-      $(this).css('background-color', '#cdbcbd')
+      $(this).css('background-color', '#e1dfe0')
     }
     // OR if the user's current time is less than time-row (future),
     else {
       // turn the background color of the text area to a medium/darker pink
-      $(this).css('background-color', '#c85d7a')
+      $(this).css('background-color', '#fc94af')
     }
 
   })
 
   // Using day.js to display the user's current day, in format, to the 'currentDay' class of HTML
   $('#currentDay').text(dayjs().format('MM/DD/YYYY'))
-  
+
 });
